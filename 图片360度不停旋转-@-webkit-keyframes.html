@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+body {
+    background:#1F1F1F;
+}
+.picxz {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    background: no-repeat url("http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg") left top;
+    -webkit-background-size: 220px 220px;
+    -moz-background-size: 220px 220px;
+    background-size: 220px 220px;
+    -webkit-border-radius: 110px;
+    border-radius: 110px;
+  -webkit-animation:loadRotate 3s linear infinite;
+  -webkit-animation-fill-mode:both;
+}
+
+@-webkit-keyframes loadRotate{
+  from{
+    -webkit-transform:rotateZ(0deg);
+  }
+  to{
+    -webkit-transform:rotateZ(360deg);
+  }
+}
+@keyframes loadRotate{
+  from{
+    transform:rotateZ(0deg);
+  }
+  to{
+    transform:rotateZ(360deg);
+  }
+}
+</style>
+</head>
+
+<body>
+<div  class="picxz"></div>
+</body>
+</html>
