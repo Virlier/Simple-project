@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+
+<script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+<link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+<script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+
+
+<style>
+
+
+
+
+
+* {margin:0;padding:0;
+
+}
+
+#nav {
+background-color:#fdf50d;width:836px;height:60px;margin:0 auto;
+font-size:25px;
+
+}
+ul {list-style:none;}
+ul li {float:left;
+position:relative;
+line-height:60px;text-align:center;
+
+}
+a{text-decoration:none;color:#000;display:block;width:134px;}
+a:hover {text-decoration:none;color:white;background-color:red;}
+
+
+
+ul li ul {width:134px;display:none;
+position:absolute;top:60px;left:-10px;}
+ul li ul li{padding:0 10px;}
+
+#nav>ul>li:hover ul {display:block;}
+
+
+
+#img {vertical-align:middle;}
+
+
+body {background-image:url("1.jpg");
+background-size:cover;
+background-repeat:no-repeat;}
+
+#avitor {width:150px;height:150px;
+background-image:url(2.jpg);
+background-size:cover;
+
+margin:150px auto auto;}
+
+
+
+.df {position:relative;margin:auto auto;}
+
+#inner {margin:0 auto;}
+
+
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+    <div id="nav">
+        <div id="inner">
+            <ul>
+                <li><a href="#">Virlier</a></li>
+                <li><a href="#">我的主页</a>
+                    <ul>
+                        <li><a href="#">github</a></li> 
+                        <li><a href="#">博客</a></li> 
+                        <li><a href="#">微博</a></li> 
+                        <li><a href="#">空间</a></li> 
+                    </ul>
+                </li>
+                <li><a href="#">相册</a></li>
+                <li><a href="#">日志</a></li>
+                <li><a href="#">联系</a></li>
+                
+                <li id="feed"><img src="feed.jpg" id="img"/></li>
+                <li><a href="#" id="subscribe">Subscribe</a><li>
+            </ul>
+        </div>
+    </div>
+    <div id=avitor></div>
+
+</body>
+<script>
+document.getElementById("subscribe").onmouseover = function(){
+document.getElementById("feed").style.background="red";}
+
+document.getElementById("subscribe").onmouseout= function(){
+document.getElementById("feed").style.background="yellow";}
+
+</script>
+
+
+
+</html>
