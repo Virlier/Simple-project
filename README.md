@@ -1,5 +1,6 @@
 # Simple-project
 关于html5,css3,JavaScript，适合入门的一些简单项目。
+'''html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,3 +28,4 @@
     </div>
 </body>
 </html>
+'''
